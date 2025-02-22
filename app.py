@@ -7,7 +7,7 @@ st.writte("This web app helps you understand and develop a growth mindset. "
     "Remember, learning is a journey, and every challenge is an opportunity to grow! ")
 #quote section
 st.header("Today's Growth Mindset Quote 💡")
-st.writte("Success is not final, failure is not fatal. It is the courage to continue that counts.")
+st.write("Success is not final, failure is not fatal. It is the courage to continue that counts.")
 st.header("whta's Your Challange Today?")
 user_input = st.text_input("Describe a challange youre facing")
 #condition
@@ -33,6 +33,6 @@ if achievement:
 else:
     st.info("Big or Small , every achievement  counts! Share one now ")
 #footer 
-st.writte("- - - ")
-st.writte("Keep beliving in yourself. Growth is a journey, not a destination! 🚀")
-st.writte("**⛔  Createt by Sagar sheikh")
+st.write("- - - ")
+st.write("Keep beliving in yourself. Growth is a journey, not a destination! 🚀")
+st.write("**⛔  Createt by Sagar sheikh")
