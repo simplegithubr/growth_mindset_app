@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title = "Growth Mindset Project", page_icon="★")
 st.title("Growth Mindset Challenge: Web App with Streamlit")
 st.header("🚀 Welcome To Your Growth Journey")
-st.writte("This web app helps you understand and develop a growth mindset. "
+st.write("This web app helps you understand and develop a growth mindset. "
     "Remember, learning is a journey, and every challenge is an opportunity to grow! ")
 #quote section
 st.header("Today's Growth Mindset Quote 💡")
