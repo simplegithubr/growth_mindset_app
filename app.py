@@ -33,6 +33,6 @@ if achievement:
 else:
     st.info("Big or Small , every achievement  counts! Share one now ")
 #footer 
-st.write("- - - ")
-st.write("Keep beliving in yourself. Growth is a journey, not a destination! 🚀")
-st.write("**⛔  Createt by Sagar sheikh")
+st.writte("- - - ")
+st.writte("Keep beliving in yourself. Growth is a journey, not a destination! 🚀")
+st.writte("**⛔  Createt by Sagar sheikh")
