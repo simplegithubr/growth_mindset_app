@@ -33,19 +33,7 @@ if achievement:
 else:
     st.info("Big or Small , every achievement  counts! Share one now ")
 
-if "progress" not in st.session_state:
-    st.session_state.progress = 0
 
-if user_input and reflection and achievement:
-    st.session_state.progress = 100
-elif user_input and reflection:
-    st.session_state.progress = 70
-elif user_input:
-    st.session_state.progress = 40
-
-    st.progress(st.session_state.progress)
-    st.write(f"Your Growth Progress: {st.session_state.progress}% 🚀")
-    st.image("https://source.unsplash.com/600x300/?success,motivation", caption="Keep Growing! 🚀")
 
 #footer 
 st.write("- - - ")
