@@ -8,11 +8,11 @@ st.write("This web app helps you understand and develop a growth mindset. "
 #quote section
 st.header("Today's Growth Mindset Quote 💡")
 st.write("Success is not final, failure is not fatal. It is the courage to continue that counts.")
-st.header("whta's Your Challange Today?")
+st.header("What's Your Challenge Today?")
 user_input = st.text_input("Describe a challange youre facing")
 #condition
 if user_input:
-    st.success(f"you are facing : {user_input} . keep pushing toword your golls! 💪 ")
+    st.success(f"you are facing : {user_input} . keep pushing toward your goals!! 💪 ")
 else:
         st.warning("Tell us about your challange to get started")
 #Reflection Section
@@ -32,7 +32,22 @@ if achievement:
     st.success(f"Amazing! You achieved: {achievement} 🎉")
 else:
     st.info("Big or Small , every achievement  counts! Share one now ")
+
+if "progress" not in st.session_state:
+    st.session_state.progress = 0
+
+if user_input and reflection and achievement:
+    st.session_state.progress = 100
+elif user_input and reflection:
+    st.session_state.progress = 70
+elif user_input:
+    st.session_state.progress = 40
+
+    st.progress(st.session_state.progress)
+    st.write(f"Your Growth Progress: {st.session_state.progress}% 🚀")
+    st.image("https://source.unsplash.com/600x300/?success,motivation", caption="Keep Growing! 🚀")
+
 #footer 
 st.write("- - - ")
 st.write("Keep beliving in yourself. Growth is a journey, not a destination! 🚀")
-st.write("**⛔  Createt by Sagar sheikh")
+st.write("**⛔  Created by Sagar Sheikh")
